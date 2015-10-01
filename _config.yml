@@ -12,3 +12,7 @@ github_username:  flybaseio
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  
