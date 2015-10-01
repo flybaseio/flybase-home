@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="author" content="{{ site.name }}" />
+	<meta name="description" content="{{ site.description }}">
+
+	<meta name="msvalidate.01" content="95A307C2B23E2606979E2773478C35AC" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="google-site-verification" content="b0dqaa8be0t9n6YBIqV99GjeLKUtGdx-eNcv-DKPU_o" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="description" content="Flybase is a real-time backend as a service that allows you to create incredible apps. Save, Store and Update Data in real-time directly from the browser or mobile client using only javascript, REST API, or native iOS or Android code. {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="keywords" content="real-time, backend as a service, websockets, instant API, mobile database, Angular Bindings, Backbone Bindings, Ember Bindings, iOS plugins, Android plugins, javascript API, real-time sync, browser, mobile, no servers, build apps fast, servers optional, completely real-time, build collaborative apps, real-time, JSON data, First-class Security, Automatic Scaling, Real-time Synchronization, Data Accessibility, Free Sign Up, REST API, PHP, Python, Ruby">
+	<meta name="author" content="Roger Stringer">
+
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css?v=3" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
+	<link rel="stylesheet" href="/assets/css/prism.css">
+
+	<link rel="icon" type="image/png" href="/assets/favicon.ico">
+	<link rel="apple-touch-icon" href="/assets/favicon.ico"/>
+	<meta name="robots" content="all">
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-56159710-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+<!-- Facebook Conversion Code for Flybase -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6023557885808', {'value':'0.00','currency':'CAD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6023557885808&amp;cd[value]=0.00&amp;cd[currency]=CAD&amp;noscript=1" /></noscript>
+
+	<meta property="og:type" content="website">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@flybaseio">
+	<meta name="twitter:creator" content="@flybaseio">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}">
+	<meta name="twitter:description" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}">
+	<meta property="og:site_name" content="Flybase.io">
+	
+	<meta name="twitter:image" content="http://flybase.io/logosm.png" />
+	<meta property="og:image" content="http://flybase.io/logosm.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1363" />
+	<meta property="og:image:height" content="1363" />	
+	<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+	<meta property="og:description" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}">
+	<meta property="og:locale" content="en_US">
+</head>
+<body>
+	<div id="page-wrapper">
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="/"><i class="fa fa-rocket"></i> Flybase</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="/features/">Features</a></li>
+					<li><a href="/pricing/">Pricing</a></li>
+	
+					<li>
+						<a href="#" class="icon fa-angle-down">Resources</a>
+						<ul>
+							<li><a href="/getting-started/" title="Getting Started">Getting Started</a></li>
+							<li><a href="/tutorial/" title="Tutorial">Tutorial</a></li>
+							<li><a href="http://docs.flybase.io/" title="Developer Docs">Developer Docs</a></li>
+							<li><a href="/books/" title="Books on Flybase">Books</a></li>
+						</ul>
+					</li>
+					<li><a class="bloglink" href="http://blog.flybase.io/" title="The Flybase Blog">Blog</a></li>
+					<li>
+						<a href="https://api.flybase.io/login" class="btn btn-primary box-shadow--4dp">Login</a>&nbsp;
+					</li>
+					<li>
+						<a href="https://api.flybase.io/signup" class="btn btn-default box-shadow--4dp">Sign Up</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+        {{ content }}
+<!-- ******FOOTER****** --> 
+		<footer class="footer">
+		    <div class="footer-content">
+		        <div class="container">
+					<div class="row">
+		                <div class="footer-col links 2u 12u(mobilep)">
+		                    <div class="footer-col-inner">
+		                        <h4 class="title">What We Do</h4>
+		                        <ul class="list-unstyled">
+		                            <li><a href="http://blog.flybase.io/" title="Our Blog"><i class="fa fa-caret-right"></i>Our Blog</a></li>
+		                            <li><a href="/pricing/" title="Pricing"><i class="fa fa-caret-right"></i>Pricing</a></li>
+									<li><a href="/experts/" title="Expert Services"><i class="fa fa-caret-right"></i>Expert Services</a></li>
+									<li><a href="/training/" title="Training"><i class="fa fa-caret-right"></i>Training</a></li>                            
+		                        </ul>
+		                    </div><!--//footer-col-inner-->
+		                </div><!--//foooter-col-->    
+		                <div class="footer-col links 2u 12u(mobilep)">
+		                    <div class="footer-col-inner">
+		                        <h4 class="title">Resources</h4>
+		                        <ul class="list-unstyled">
+		                            <li><a href="/getting-started/" title="Getting Started"><i class="fa fa-caret-right"></i>Getting Started</a></li>
+		                            <li><a href="/tutorial/" title="Tutorial"><i class="fa fa-caret-right"></i>Tutorial</a></li>
+		                            <li><a href="http://docs.flybase.io/" title="Developer Docs"><i class="fa fa-caret-right"></i>Developer Docs</a></li>
+		                            <li><a href="/books/" title="Books on Flybase"><i class="fa fa-caret-right"></i>Books</a></li>
+		                        </ul>
+		                    </div><!--//footer-col-inner-->
+		                </div><!--//foooter-col-->    
+		                <div class="footer-col links 2u 12u(mobilep)">
+		                    <div class="footer-col-inner">
+		                        <h4 class="title">Who We Are</h4>
+		                        <ul class="list-unstyled">
+		                            <li><a href="/about/" title="About Flybase"><i class="fa fa-caret-right"></i>About</a></li>
+		                            <li><a href="/support/" title="Help & Support"><i class="fa fa-caret-right"></i>Help & Support</a></li>
+		                            <li><a href="/contact/" title="Contact us"><i class="fa fa-caret-right"></i>Contact Us</a></li>
+		                        </ul>
+		                    </div><!--//footer-col-inner-->
+		                </div><!--//foooter-col-->    
+		                <div class="footer-col connect 6u 12u(mobilep)">
+		                    <div class="footer-col-inner">
+		                        <ul class="social list-inline">
+		                            <li><a href="https://twitter.com/flybaseio" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+		                            <li><a href="//facebok.com/DataMcFly"><i class="fa fa-facebook" title="Facebook"></i></a></li>
+		                            <li><a href="//github.com/flybaseio"><i class="fa fa-github" title="Github"></i></a></li>
+		                            <li><a href="http://slack.flybase.io"><i class="fa fa-slack" title="Join Our Slack Community"></i></a></li>
+		                            <li class="row-end"><a href="//blog.flybase.io" title="Our Blog"><i class="fa fa-rss"></i></a></li>             
+		                        </ul>
+		                        <div class="form-container">
+		                            <p class="intro">Stay up to date with the latest news and offers from Flybase</p>
+		                            <form class="signup-form navbar-form" action="//flybase.us9.list-manage.com/subscribe/post?u=3b954fafb0dae072610469e35&amp;id=a35eea690c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+									<div class="row uniform 50%">
+										<div class="8u 6u(mobilep)">
+		                                    <input type="text" class="form-control" name="EMAIL" placeholder="Enter your email address">
+										</div>
+										<div class="4u 4u(mobilep)">
+		                                <button type="submit" class="btn btn-primary btn-lg" name="subscribe" id="mc-embedded-subscribe">Subscribe Now</button>                                 
+										<div style="position: absolute; left: -5000px;"><input type="text" name="b_3b954fafb0dae072610469e35_a35eea690c" tabindex="-1" value=""></div>
+										</div>
+									</div>
+		                            </form>
+		                            <p><small>We will never, ever spam you or sell your information. Promise.</small></p>
+		<!--End mc_embed_signup-->
+		                        </div><!--//subscription-form-->
+		                    </div><!--//footer-col-inner-->
+		                </div><!--//foooter-col-->
+					</div>
+		        </div><!--//container-->
+		    </div><!--//footer-content-->
+		    <div class="bottom-bar">
+		        <div class="row">
+		            <div class="5u 12u(mobilep) align-right">
+			            <small class="copyright">
+			            	Copyright @ 2015 <a href="//flybase.io/" target="_blank">Flybase</a> by Data McFly
+				        </small>
+		            </div>
+		            <div class="5u 12u(mobilep) align-left">
+						<ul class="list-unstyled list-inline">
+							<li><small class="copyright"><a href="/terms/privacy-policy">Privacy Policy</a></small></li>
+							<li><small class="copyright"><a href="/terms/">Terms of Service</a></small></li>
+							<li><small class="copyright"><a href="/terms/service-level-agreement">Service Level Agreement</a></small></li>
+						</ul>
+		            </div>
+		        </div><!--//container-->
+		    </div><!--//bottom-bar-->
+		</footer><!--//footer--> 
+	</div>
+
+	<!-- Scripts -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script src="/assets/js/jquery.dropotron.min.js"></script>
+	<script src="/assets/js/jquery.scrollgress.min.js"></script>
+	<script src="/assets/js/prism.js"></script>
+	<script src="/assets/js/skel.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="https://cdn.flybase.io/flybase.js?20150829"></script>
+	<script src="/assets/js/main.js"></script>
+</body>
+</html>

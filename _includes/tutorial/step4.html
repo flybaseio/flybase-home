@@ -1,0 +1,61 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			5. Reading Data
+		</h3>
+	</div>
+	<div class="panel-body">
+		<h4>We're writing data, now let's receive data.</h4>
+		<p>We need to tell Flybase to notify us when chat messages are stored. We do this by adding a callback to the list of chat messages using the <code>on()</code> method, as shown below:</p>
+
+		<pre><code class="language-javascript">
+Ref.on('value', function(data) {
+	// We'll fill this in later.
+});
+
+Ref.on('added', function(data) {
+	// We'll fill this in later.
+});
+		</code></pre>
+
+		<p>This method takes two arguments: the <code>event type</code> and the <code>callback function</code>.</p>
+		<p>We're going to set up two event callbacks, one for '<code>value</code>', which will load previously messages when the page loads, and then we'll use the '<code>added</code>' event so that we are notified of the arrival of individual messages as they are stored.</p>
+		<p>Your file should look like this:</p>
+		<pre><code class="language-markup">
+&lt;html>
+&lt;head>
+	&lt;script src="https://cdn.flybase.io/flybase.js">&lt;/script>
+	&lt;script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'>&lt;/script>
+&lt;/head>
+&lt;body>
+	&lt;ul id='messages'>&lt;/ul>
+	&lt;input type='text' id='name' placeholder='Name'>
+	&lt;input type='text' id='message' placeholder='Message'>
+	&lt;script>
+		var Ref = new Flybase("74k8064f-cd6f-4c07-8baf-b1d241496eec", "tutorial", "chat");
+		$('#message').keypress(function (e) {
+			if (e.keyCode == 13) {
+				var name = $('#name').val();
+				var text = $('#message').val();
+				Ref.set( {name:name, text:text} );
+				$('#message').val('');
+			}
+		});
+		Ref.on('value', function(data) {
+			//	We'll fill this in later.
+		});
+		Ref.on('added', function(data) {
+			//	We'll fill this in later.
+		});
+	&lt;/script>
+&lt;/body>
+&lt;/html>
+		</code></pre>
+		
+		<h4>Now you're handling real-time updates!</h4>
+
+		<p>With Flybase, you always read data using callbacks. This allows us to guarantee that Flybase applications always update in real-time.</p>
+	</div>
+	<br />
+</div>
+<br />

@@ -1,0 +1,126 @@
+---
+layout: page
+title: Getting Started
+class: about-page
+---
+	<div class="text-center well">					
+		<h2>Store & Sync Data in Real-time!</h2>
+		<p>Design, build, and scale real-time web and mobile apps in minutes instead of days using client-side code and our powerful API.</p>
+		<a href="https://app.flybase.io/signup" class="btn btn-primary btn-lg"><i class="fa fa-rocket"></i>Get Started Now »</a>
+	</div>
+</div>
+<br />
+<div class="box">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<span class="badge numb">1</span> Sign up for a free Flybase account
+			</h3>
+		</div>
+		<div class="panel-body">
+			<p>The first thing you need to do is <a href="https://app.flybase.io/signup">sign up</a> for a free account, and get your API Key</p>
+			<div class="well">
+				<img src="/assets/images/dashboard.jpg" style="width:98%;height:auto;" />
+			</div>
+			<p>You'll find your API Key at the bottom of this page, you can also create more API Keys with limited permissions.</p>
+			<p>Now, use the form on the dashboard to create an app called <code>tutorial</code></p>
+			<p>We also have a handy help widget that you can use at anytime to send us any questions.</p>
+		</div>
+	</div>
+</div>
+<br />
+<div class="box">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<span class="badge numb">2</span> Install Flybase
+			</h3>
+		</div>
+		<div class="panel-body">
+			<p>Ready to use with just one line of code.</p>
+			<pre>
+				<code class="language-javascript">
+	&lt;script src="https://cdn.flybase.io/flybase.js">&lt;/script>
+				</code>
+			</pre>
+		</div>
+	</div>
+</div>
+<br />
+<div class="box">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<span class="badge numb">3</span> Initialize your Flybase object
+			</h3>
+		</div>
+		<div class="panel-body">
+			<p>Once you <a href="https://app.flybase.io/signup">sign up</a> for a free account, get your API Key, and create an app called <code>sample</code></p>
+			<pre>
+				<code class="language-javascript">
+	//Use YOUR Flybase credentials (not the one below)
+	var flybase = new Flybase("74k8064f-cd6f-4c07-8baf-b1d241496eec", "sample", "chat");
+				</code>
+			</pre>
+		</div>
+	</div>
+</div>
+<br />
+<div class="box">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<span class="badge numb">4</span> Save data
+			</h3>
+		</div>
+		<div class="panel-body">
+			<p>Data is stored as standard JSON.</p>
+			<pre>
+				<code class="language-javascript">
+	flybase.set({ name: "Flybase" });
+				</code>
+			</pre>
+		</div>
+	</div>
+</div>
+<br />
+<div class="box">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<span class="badge numb">5</span> Update in real-time.
+			</h3>
+		</div>
+		<div class="panel-body">
+			<p>Flybase responds immediately to data changes as they occur.</p>
+			<pre>
+				<code class="language-javascript">
+	flybase.on("added", function(data) {
+		var name = data.value().name;
+		alert("My name is " + name);
+	});
+				</code>
+			</pre>
+		</div>
+	</div>
+</div>
+<br />
+<div class="box">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<span class="badge numb">5</span> Get Started Now!
+			</h3>
+		</div>
+		<div class="panel-body">
+			<p><a href="https://app.flybase.io/signup"><strong>Create your free account</strong></a> and start building real-time apps.</p>
+		</div>
+	</div>
+</div>
+<br />
+<!-- ******CTA Section****** -->
+<section id="cta" class="black text-center">
+   <h2 class="title">Build real-time apps quickly and easily with our powerful API</h2>
+   <p class="intro">What are you waiting for?</p>
+	<p><a class="btn btn-primary btn-lg box-shadow--4dp" href="https://app.flybase.io/signup" target="_blank"><i class="fa fa-rocket"></i> Sign up now »</a></p>
+</section><!--//cta-section-->

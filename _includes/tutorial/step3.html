@@ -1,0 +1,53 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			4. Writing Data
+		</h3>
+	</div>
+	<div class="panel-body">
+		<h4>Great, we've made it this far, now let's send a chat message</h4>
+		
+		<p>The Flybase reference you just created can be used to write data to your Flybase app using the <code>set()</code> function.</p>
+		
+		<p>Now, let's write a message to Flybase using the <code>set()</code> function as shown:</p>
+		
+		<pre><code class="language-javascript">
+Ref.set( {name:name, text:text} );
+		</code></pre>
+		
+		<p>
+			Let's update our file to send chat messages to our Flybase app:
+		</p>
+
+		<pre><code class="language-markup">
+&lt;html>
+&lt;head>
+&lt;script src="https://cdn.flybase.io/flybase.js">&lt;/script>
+&lt;script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'>&lt;/script>
+&lt;/head>
+&lt;body>
+&lt;input type='text' id='name' placeholder='Name'>
+&lt;input type='text' id='message' placeholder='Message'>
+&lt;script>
+	var Ref = new Flybase("74k8064f-cd6f-4c07-8baf-b1d241496eec", "tutorial", "chat");
+	$('#message').keypress(function (e) {
+		if (e.keyCode == 13) {
+			var name = $('#name').val();
+			var text = $('#message').val();
+
+			Ref.set( {name:name, text:text} );
+
+			$('#message').val('');
+		}
+	});
+&lt;/script>
+&lt;/body>
+&lt;/html>
+		</code></pre>
+
+		<p>Flybase can handle objects of arbitrary complexity. If it can be represented as JSON, it can fit in Flybase.</p>
+		<p>When objects are written to Flybase, the structure of the object is mapped to the Flybase collection in use. In this example, when the object <code>{name: name, text: text}</code> is set, name and text are automatically mapped as fields in the <code>chat</code> collection referenced inside <code>Ref</code>.</p>
+	</div>
+	<br />
+</div>
+<br />

@@ -1,0 +1,174 @@
+---
+layout: page
+title: Features
+subtitle: "Building an application is full of tedious and difficult tasks. Nearly every app needs a database, and an API. With Flybase — all of this is done for you. <em>Our mission at Flybase is to provide these services so you can focus on creating awesome user experiences.</em>"
+class: about-page
+---
+<div class="well">
+	{% comment %}
+		<p>Building an application is full of tedious and difficult tasks. Nearly every app needs a database, an API, and authentication. With Flybase — all of this is done for you. <em>Our mission at Flybase is to provide these services so you can focus on creating awesome user experiences.</em></p>
+	{% endcomment %}
+	<h3>How much time do you spend on tedious and difficult tasks?</h3>
+	<p>So you've decided to start developing the next great app. You think about the user interface, the user interaction, you start creating mockups... And then you start developing.</p>
+	<p>But before that you need to do lots of tedious, boring, repetitive and oftentimes difficult tasks:</p>
+		
+	<ul class="fa-ul">
+		<li><i class="fa-li fa fa-close"></i> You need to set up a server, a database, a development environment</li>
+		<li><i class="fa-li fa fa-close"></i> You configure the database and start developing a web service</li>
+		<li><i class="fa-li fa fa-close"></i> You start worrying about security and scalability</li>
+		<li><i class="fa-li fa fa-close"></i> Every time you need a new feature you start the cycle again (change the database, web service...)</li>
+	</ul>
+	
+	<p>Let's face it, just about every app needs a database, an API and authentication.</p>
+	
+	<p>With Flybase — all of this is done for you. Our mission at Flybase is to provide these services so you can focus on creating awesome user experiences.</p>
+	
+	{% comment %}
+		<h3>Flybase lets you...</h3>
+		
+		<p><strong>Drastically reduce the time to market?</strong> Focusing on coding actual features, the user interface, the user interaction, actual functionality.</p>
+		
+		<p><strong>Scale without worries?</strong> Without having to worry about replication, backups, data centers, availability, etc.</p>
+		
+		<p><strong>Enjoy developing apps again?</strong> Changing anything in no time without having to worry about deploys, environments, etc.</p>
+		
+		<ul class="fa-ul">
+			<li><i class="fa-li fa fa-check"></i>Keep your data stored in a <strong>fast and safe cloud service </strong>.</li>
+			<li><i class="fa-li fa fa-check"></i>Start developing your app in <strong>minutes </strong>.</li>
+			<li><i class="fa-li fa fa-check"></i>Get <strong>hard work done </strong> such as real-time notifications.</li>
+			<li><i class="fa-li fa fa-check"></i>Enjoy a backend that <strong>evolves smoothly as your app grows </strong>.</li>
+		</ul>
+		
+		<h3>Flybase: the  real-time platform for your next mobile and web apps</h3>
+	{% endcomment %}
+		
+	<p>We created Flybase because we were tired of solving the same problems over and over again. We wanted a fast and powerful platform to start focusing on our apps instead of wasting time on the infrastructure.</p>
+</div>
+<div class="page-header">
+	<h2><i class="fa fa-rocket"></i> Real-time Database</h2>
+</div>
+{% comment %}
+	<p>Every application needs a database. With Flybase, you just create a new app in your account dashboard, and the database gets created automatically. You can then create new collections to store data, or have them get created for you as you build your apps with our helper libraries or REST API.</p>
+{% endcomment %}		
+<h3>Save Data in the cloud</h3>
+<p>
+	A Flybase <strong>App</strong> itself is your real-time database, hosted in the
+	cloud. Since Flybase is a NoSQL database you can easily store data as simple
+	JSON documents.
+</p>
+<p>
+	Our servers are optimized for extremely low latencies. Flybase is fast enough
+	for high performance real-time applications like multiplayer games.
+	We maintain persistent connections between your clients and our servers so
+	that data synchronizes both directions without delay. You can expect typical
+	network latencies (less than 100ms) for data updates between clients.
+</p>
+<h3>Real-time Data</h3>
+<p>
+	Data in your Flybase <strong>app</strong> is stored as JSON and synchronized in real-time to every connected client. All of your clients share one Flybase database and automatically receive updates with the newest data.
+</p>
+<p>
+	Flybase isn't just for real-time apps, <strong>it is for anybody that wants to write apps without having to run backend servers or write server code</strong>. Many developers prefer focusing on front end rather than building, deploying, and maintaining server-side backend code. Even if real-time isn’t critical to your application, Flybase can help you build your application faster and scale seamlessly.
+</p>
+<h3>Instant Scalability</h3>
+<p>
+	When your app suddenly becomes a hit, you don't have to scramble to provision extra
+	capacity or worry about if your server code will scale.
+</p>
+<h3>Works offline</h3>
+<p>
+	Your Flybase app will remain responsive regardless of network latency or Internet connectivity. All writes to a Flybase database will trigger local events immediately, before any data has been written to the server. Once connectivity is re-established, the client will receive any changes it missed, synchronizing it with the current server state.
+</p>
+<h3>Speed and performance</h3>
+<p>In Flybase, we are obsessed with speed. In order to have a great web or mobile experience you need speed. So we have built Flybase with speed and performance in mind. </p>
+{% comment %}
+	<h3>Data browser</h3>
+	<p>Flybase has a great control panel where you can manage your apps and data easily: perform queries on data, add, edit or remove records.</p>
+{% endcomment %}
+<div class="well">
+	<h3>Powerful query engine</h3>
+	<p>Perform queries against your data and customize what users see.</p>
+	<pre style="height:210px;width:100%">
+		<code class="language-javascript">
+//	Get posts with a likes count of greater than 10:
+flybase.where({"likes": {"$gt": 10}}).on('value', function(data){
+	data.forEach( function( snapshot ){
+		console.log( snapshot.value() );
+	});
+});
+		</code>
+	</pre>
+	<h3>Real-time custom events</h3>
+	<p>Listen for and trigger real-time messages and events.</p>
+	<pre style="height:210px;">
+		<code class="language-javascript">
+//	or trigger a custom event
+flybase.on("custom_event", function(message) {
+	console.log( message );
+});
+
+flybase.trigger("custom_event", "Hi")
+		</code>
+	</pre>
+</div>
+<div class="content-break"><i class="fa fa-rocket"></i></div>
+		
+<div class="page-header">
+	<h2><i class="fa fa-key"></i> Secure</h2>
+</div>
+<p>All of your data is transferred over a secure SSL connection with a 2048-bit certificate. Database access and validation is controlled using our API key rules.</p>
+<h3>API Keys</h3>
+<p>Flybase allows you to restrict reading and writing via custom access controls, authentication and IP whitelisting.</p>
+<p>Access to apps are controlled by API keys that are granted with a certain set of permissions. API keys determine which apps you can access and what you can do with them. They must be created from inside your account.</p>
+
+<p>A default API key is automatically created and available for you in your application dashboard.</p>
+
+<h3>Permissions</h3>
+
+<p>API keys grant a different set of permissions according to their level of privileges:</p>
+
+<ul>
+	<li>Admin: allow any operation on an application</li>
+	<li>Read-Only: give only read access to an app as well as the ability to create new documents</li>
+	<li>API Keys can be whitelisted to allow access from certain domains or IP addresses only</li>
+</ul>
+<p>On top of that, all data is replicated and backed up to multiple secure locations.</p>
+<div class="content-break"><i class="fa fa-rocket"></i></div>
+<div class="page-header">
+	<h2>Flybase Benefits &amp; Features</h2>
+</div>
+<ul class="fa-ul">
+	<li><i class="fa-li fa fa-check"></i> Build fully featured modern applications with just frontend code.</li>
+	<li><i class="fa-li fa fa-check"></i> Save development time by focusing on building a great front-end app.</li>
+	<li><i class="fa-li fa fa-check"></i> Sync and store application and user data instantly across multiple platforms.</li>
+	<li><i class="fa-li fa fa-check"></i> No need to provision or manage server infrastructure.</li>
+	<li><i class="fa-li fa fa-check"></i> Flybase automatically scales with you.</li>
+	<li><i class="fa-li fa fa-check"></i> Cross platform clients make it easy to integrate Flybase with your mobile apps, web apps or any existing server infrastructure.</li>
+	<li><i class="fa-li fa fa-check"></i> Flybase is secure by default with SSL encryption, using 2048-bit certificates.</li>
+</ul>
+
+<p><strong>Drastically reduce the time to market</strong> - Letting you focus on coding actual features, the user interface, the user interaction, actual functionality.</p>
+
+<p><strong>Scale without worries</strong> - Without having to worry about replication, backups, data centers, availability, etc.</p>
+
+<p><strong>Enjoy developing apps again</strong> - Changing anything in no time without having to worry about deploys, environments, etc.</p>
+
+<p><strong>From developers for developers!</strong> We originally created this service to fill a need in our own freelance projects. The service is based in our day by day needs and experience.</p>
+
+<div class="well">
+	<div class="text-center">
+		<h3>Ready to Build Awesome Apps?</h3>
+		<p>
+			<a href="https://app.flybase.io/signup" class="btn btn-primary btn-lg box-shadow--4dp"><i class="fa fa-rocket"></i> Sign up now for free »</a>
+		</p>
+	</div>
+</div>
+{% comment %}
+<section id="cta-section" class="section cta-section text-center home-cta-section">
+	<div class="container">
+	   <h2 class="title">Join the Flybase movement</h2>
+	   <p class="intro">What are you waiting for? Power your apps using Flybase today</p>
+	   <p><a class="btn btn-cta btn-cta-primary" href="https://app.flybase.io/signup" target="_blank">Sign up now for free »</a></p>
+	</div><!--//container-->
+</section><!--//cta-section-->
+{% endcomment %}

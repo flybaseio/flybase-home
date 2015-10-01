@@ -1,0 +1,38 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			3. Accessing Data
+		</h3>
+	</div>
+	<div class="panel-body">	
+		<p>Flybase uses three references to tell your app which data you want to access. First, sign up for a new account at <a href="https://app.flybase.io/signup" target="_blank">Flybase App</a> if you have not already done so.
+		</p>
+		<p>Once you login, create a new app called <code>tutorial</code></p>
+		<p>Copy your API Key, and paste it in the following code where it says <code>74k8064f-cd6f-4c07-8baf-b1d241496eec</code>:</p>
+
+		<p>Now, let's create a reference to the root of your Flybase app as shown below:</p>
+
+		<pre><code class="language-javascript">
+var Ref = new Flybase("74k8064f-cd6f-4c07-8baf-b1d241496eec", "tutorial", "chat");
+		</code></pre>
+
+		<p>Your file should look like this:</p>
+
+		<pre><code class="language-markup">
+&lt;html>
+&lt;head>
+&lt;script src="https://cdn.flybase.io/flybase.js">&lt;/script>
+&lt;/head>
+&lt;body>
+&lt;script>
+	var Ref = new Flybase("74k8064f-cd6f-4c07-8baf-b1d241496eec", "tutorial", "chat");
+&lt;/script>
+&lt;/body>
+&lt;/html>
+		</code></pre>
+
+		<p>This will tell your app what <code>apiKey</code> to use, what Flybase app to use, and what collection to use, which will be <code>chat</code>.</p>
+	</div>
+	<br />
+</div>
+<br />

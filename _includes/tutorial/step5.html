@@ -1,0 +1,61 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			6. Processing Data
+		</h3>
+	</div>
+	<div class="panel-body">
+		<h4>Now we need to display the chat messages on the page.</h4>
+		<p>For each chat message, Flybase will call your callback with a <em>response</em> containing the message's data.</p>
+		<p>We'll extract the message data from the response by calling the <code>value()</code> function and assign it to a variable.</p>
+		<p>Then, call the <code>addChat()</code> function to display the message as shown:</p>
+
+		<pre><code class="language-javascript">
+var message = data.value();
+addChat(message.name, message.text);
+		</code></pre>
+
+		<p>Your file should look like this:</p>
+
+		<pre><code class="language-markup">
+&lt;html>
+&lt;head>
+&lt;script src="https://cdn.flybase.io/flybase.js">&lt;/script>
+&lt;script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'>&lt;/script>
+&lt;/head>
+&lt;body>
+&lt;ul id='messages'>&lt;/ul>
+&lt;input type='text' id='name' placeholder='Name'>
+&lt;input type='text' id='message' placeholder='Message'>
+&lt;script>
+	var Ref = new Flybase("74k8064f-cd6f-4c07-8baf-b1d241496eec", "tutorial", "chat");
+	Ref.on('value', function (data) {
+		data.forEach( function( message ){
+			var message = message.value();
+			addChat(message.name, message.text);
+		});
+	});
+	$('#message').keypress(function (e) {
+		if (e.keyCode == 13) {
+			var name = $('#name').val();
+			var text = $('#message').val();
+			Ref.set( {name:name, text:text} );
+			$('#message').val('');
+		}
+	});
+	Ref.on('added', function(data) {
+		var message = data.value();
+		addChat(message.name, message.text);
+	});
+	function addChat(name, text) {
+		$('&lt;li/>').text(text).prepend($('&lt;strong/>').text(name+': ')).appendTo($('#messagesDiv'));
+		$('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+	}
+&lt;/script>
+&lt;/body>
+&lt;/html>
+		</code></pre>
+	</div>
+	<br />
+</div>
+<br />
