@@ -3083,7 +3083,7 @@
 		#banner p {
 			width: 75%;
 			margin: 10px auto;
-			text-align: left;
+			text-align: center;
 			font-size: 1.25em;
 			margin-bottom: 1.75em;
 		}
@@ -3295,7 +3295,9 @@
 			#banner {
 				padding: 4em 0 12em 0;
 			}
-
+				#banner p {
+					width: 50%;
+				}
 	}
 
 /* Normal */
@@ -3656,6 +3658,7 @@
 				}
 
 				#banner p {
+					width: 75px;
 					font-size: 1.25em;
 				}
 

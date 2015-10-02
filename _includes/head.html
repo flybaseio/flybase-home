@@ -1,12 +1,64 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css?v=4.3c.a" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
+	<link rel="stylesheet" href="/assets/css/prism.css">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="description" content="Flybase is a real-time backend as a service that allows you to create incredible apps. Save, Store and Update Data in real-time directly from the browser or mobile client using only javascript, REST API, or native iOS or Android code. {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="keywords" content="real-time, backend as a service, websockets, instant API, mobile database, Angular Bindings, Backbone Bindings, Ember Bindings, iOS plugins, Android plugins, javascript API, real-time sync, browser, mobile, no servers, build apps fast, servers optional, completely real-time, build collaborative apps, real-time, JSON data, First-class Security, Automatic Scaling, Real-time Synchronization, Data Accessibility, Free Sign Up, REST API, PHP, Python, Ruby">
+	<meta name="author" content="Roger Stringer">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="icon" type="image/png" href="/assets/favicon.ico">
+	<link rel="apple-touch-icon" href="/assets/favicon.ico"/>
+	<meta name="robots" content="all">
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-56159710-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
+	<!-- Facebook Conversion Code for Flybase -->
+	<script>(function() {
+	  var _fbq = window._fbq || (window._fbq = []);
+	  if (!_fbq.loaded) {
+	    var fbds = document.createElement('script');
+	    fbds.async = true;
+	    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(fbds, s);
+	    _fbq.loaded = true;
+	  }
+	})();
+	window._fbq = window._fbq || [];
+	window._fbq.push(['track', '6023557885808', {'value':'0.00','currency':'CAD'}]);
+	</script>
+	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6023557885808&amp;cd[value]=0.00&amp;cd[currency]=CAD&amp;noscript=1" /></noscript>
+
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@flybaseio">
+	<meta name="twitter:creator" content="@flybaseio">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}">
+	<meta name="twitter:description" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}">
+	<meta property="og:site_name" content="Flybase.io">
+	
+	<meta name="twitter:image" content="//flybase.io/assets/flybasesm.png" />
+	<meta property="og:image" content="//flybase.io/assets/flybasesm.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1363" />
+	<meta property="og:image:height" content="1363" />	
+	<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+	<meta property="og:description" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}">
+	<meta property="og:locale" content="en_US">
 </head>
