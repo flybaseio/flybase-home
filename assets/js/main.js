@@ -166,7 +166,7 @@ mostPopular.prototype.getPages = function( div_id ){
 						.attr("href","http://blog.flybase.io" + item.url)
 						.attr("title",item.title)
 						.attr("data-count",item.views)						
-						.text("» " + item.title)
+						.html('<i class="fa fa-rocket"></i> ' + item.title)
 				).appendTo( ul );
 			}
 			aside.append( ul );
