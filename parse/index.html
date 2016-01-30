@@ -24,14 +24,14 @@ class: about-page
 <h3>How to import to Flybase?</h3>
 <p>The exported JSON can be imported using our <code>Parse to Flybase</code> tool, which parses all your JSON files and imports it into your Flybase app, this is a fork of our usual <code>Flybase import</code> tool, as we wanted to make sure it fully supported Parse's exports for you.</p>
 
-<pre style="height:310px;width:100%">
+<pre style="height:350px;width:100%">
 	<code class="language-javascript">
 $ npm install parse2flybase
 
 $ parse2flybase --flybase_key API-KEY --flybase-app Test --flybase_collection Stuff --json test.json
 
 All data at Test/Stuff will be overwritten.
-Press <enter> to proceed, Ctrl-C to abort.
+Press &lt;enter> to proceed, Ctrl-C to abort.
 
 Reading /Users/roger/test.json... (may take a minute)
 Preparing JSON for import... (may take a minute)
