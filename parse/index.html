@@ -1,31 +1,37 @@
 ---
-layout: page
+layout: default
 title: "Migrate easily from Parse to Flybase"
 class: about-page
 ---
-
-<p>The announcement of Parse.com's impending shutdown was a shock to all of us. But you still need a way to store your data easily and sync with devices right?</p>
-
-<p>Let Flybase help you with that. Our experts are standing by to help move your data from your parse account to your Flybase account, and to help set up your cloud code as a node app.</p>
-
-<h3>How to export from Parse?</h3>
-<p>1. First, go to your <a href="http://parse.com">Parse.com</a> dashboard</p>
-<p>2. Click on <code>« App Settings »</code>.</p>
-<p>3. Then select <code>« General »</code></p>
-<p>4. Scroll down and click on <code>« Export data »</code> button.</p>
-<div class="row no-collapse 75% uniform">
-<div class="12u">
-	<span class="image fit"><img src="/assets/images/screenshot_parse.png?v=1" style="padding-bottom:20px;" /></span>
-</div></div>
-<p>5. If everything goes well, you will receive an email containing a .zip with all your data in a set of JSON files.</p>
-
-<div class="content-break"><i class="fa fa-rocket"></i></div>
-
-<h3>How to import to Flybase?</h3>
-<p>The exported JSON can be imported using our <code>Parse to Flybase</code> tool, which parses all your JSON files and imports it into your Flybase app, this is a fork of our usual <code>Flybase import</code> tool, as we wanted to make sure it fully supported Parse's exports for you.</p>
-
-<pre style="height:350px;width:100%">
-	<code class="language-javascript">
+<section id="main" class="container">
+	<header>
+		<h2>Migrate easily from Parse to Flybase</h2>
+		<p>Parse.com is going away, what do you do now?</p>
+	</header>
+	<div class="box">
+		<p>The announcement of Parse.com's impending shutdown was a shock to all of us. But you still need a way to store your data easily and sync with devices right?</p>
+		
+		<p>Let Flybase help you with that. Our experts are standing by to help move your data from your parse account to your Flybase account, and to help set up your cloud code as a node app.</p>
+	</div>
+	<div class="content-break"><i class="fa fa-rocket"></i></div>	
+	<div class="box">	
+		<h3>How to export from Parse?</h3>
+		<p>1. First, go to your <a href="http://parse.com">Parse.com</a> dashboard</p>
+		<p>2. Click on <code>« App Settings »</code>.</p>
+		<p>3. Then select <code>« General »</code></p>
+		<p>4. Scroll down and click on <code>« Export data »</code> button.</p>
+		<div class="row no-collapse 75% uniform">
+		<div class="12u">
+			<span class="image fit"><img src="/assets/images/screenshot_parse.png?v=1" style="padding-bottom:20px;" /></span>
+		</div></div>
+		<p>5. If everything goes well, you will receive an email containing a .zip with all your data in a set of JSON files.</p>
+	</div>
+	<div class="content-break"><i class="fa fa-rocket"></i></div>
+	<div class="box">
+		<h3>How to import to Flybase?</h3>
+		<p>The exported JSON can be imported using our <code>Parse to Flybase</code> tool, which parses all your JSON files and imports it into your Flybase app, this is a fork of our usual <code>Flybase import</code> tool, as we wanted to make sure it fully supported Parse's exports for you.</p>
+		
+		<pre style="height:350px;width:100%"><code class="language-javascript">
 $ npm install parse2flybase
 
 $ parse2flybase --flybase_key API-KEY --flybase-app Test --flybase_collection Stuff --json test.json
@@ -37,21 +43,30 @@ Reading /Users/roger/test.json... (may take a minute)
 Preparing JSON for import... (may take a minute)
 Importing [=================================================] 100% (9431/9431)
 Import completed.
-</code></pre>
-<br />
+		</code></pre>
+		<br />
+		<p>And that's it, you've imported your Parse.com data into Flybase, now it's just a matter of switching your app to use Flybase instead.</p>
+		
+		<p>You can try our <a href="/tutorial/">Tutorial</a> to see how easy it is to get started, check out our <a href="http://docs.flybase.io">Developer Docs</a> for any questions you have, or <a href="/contact/">contact us</a> and we'll be glad to help you migrate your data and code from Parse to Flybase</p>
+	</div>
+	<div class="content-break"><i class="fa fa-rocket"></i></div>
+	<div class="box">
+		<h3>What About My Cloud Code that's on Parse now?</h3>
+		
+		<p>We can help you migrate your cloud code to run in a node.js app, with Flybase as your backend. We've actually built a version of the Parse Server to run cloud code while using Flybase to store data, so that your existing code doesn't change at all. Get in touch with us about setting this up for you.</p>
+</div>
 
-<p>And that's it, you've imported your Parse.com data into Flybase, now it's just a matter of switching your app to use Flybase instead.</p>
+</section>
 
-<p>You can try our <a href="/tutorial/">Tutorial</a> to see how easy it is to get started, check out our <a href="http://docs.flybase.io">Developer Docs</a> for any questions you have, or <a href="/contact/">contact us</a> and we'll be glad to help you migrate your data and code from Parse to Flybase</p>
-
-<div class="content-break"><i class="fa fa-rocket"></i></div>
-
-<div class="well">
+<section id="cta" class="blue text-center">
 	<div class="text-center">
-		<h3>Need migration support?</h3>
-		<p>Please feel free to <a href="/contact/">contact us</a> to answer any questions you have about moving your data from Parse to Flybase and how our experts can help facilitate that migration as smoothly as possible..</p>
+	   <h2 class="title">Need migration support?</h2>
+	   <p class="intro">Please feel free to <a href="/contact/">contact us</a> to answer any questions you have about moving your data from Parse to Flybase and how our experts can help facilitate that migration as smoothly as possible..</p>
 		<p>
-			<a class="btn btn-primary btn-lg box-shadow--4dp" href="/contact/">Contact us</a>
+			<a class="btn btn-primary btn-lg box-shadow--4dp" href="/contact"><i class="fa fa-envelope"></i> Contact Us now »</a>
+			<span style="padding-left:10px;padding-right:10px;">  or  </span>
+			<a class="btn btn-primary btn-lg box-shadow--4dp" href="https://app.flybase.io/signup" target="_blank"><i class="fa fa-rocket"></i> Sign up now »</a>
 		</p>
 	</div>
 </div>
+<Br />
