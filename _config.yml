@@ -10,9 +10,25 @@ url: "https://flybase.io" # the base hostname & protocol for your site
 twitter_username: flybaseio
 github_username:  flybaseio
 
+twitter:
+  username: "@flybaseio"
+
+facebook:
+  app_id: "474703915878478"
+  publisher: "1416546778590314"
+  admins: "604781976"
+
+
+social:
+  name: Roger Stringer
+  links:
+    - https://twitter.com/flybaseio
+    - https://www.facebook.com/flybaseio
+    - https://github.com/flybaseio
+
 # Build settings
 markdown: kramdown
 
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  
+  - jekyll-seo-tag
