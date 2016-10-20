@@ -1,0 +1,98 @@
+---
+layout: page
+title: AngularJS
+class: about-page
+permalink: /features/angular.html
+---
+
+	<div class="well well-sm">
+		<p>Flybase works with AngularJS as a powerful backend-as-a-service that provides out-of-the-box login, push notifications,
+			Ionic integration and so much more.</p>
+	</div>
+	<p>
+		Here at Flybase, we love AngularJS, we've even built our <a href="https://github.com/flybaseio/fit-stack">rapid mvp</a> framework around AngularJS. So for us, giving you, our users, the
+		smoothest AngularJS integration you can have is important.
+	</p>
+</div>
+<br />
+<div class="box">
+	<div class="page-header">
+		<h2><i class="fa fa-rocket"></i> Real-time Database</h2>
+	</div>
+	<p>
+		Flybase's Real-Time Database Communication enables instant updates to charts, counters, logs, and other data-driven elements –
+		all without a callback to the server. And it’s completely secure, with SSL encryption and total control over data access.
+	</p>
+	<hr />
+	<h3>Powerful query engine</h3>
+	<p>Perform queries against your data and customize what users see.</p>
+	<pre style="height:210px;width:100%">
+		<code class="language-javascript">
+//	Get posts with a likes count of greater than 10:
+flybase.where({"likes": {"$gt": 10}}).on('value', function(data){
+	data.forEach( function( snapshot ){
+		console.log( snapshot.value() );
+	});
+});
+		</code>
+	</pre>
+	<h3>Real-time custom events</h3>
+	<p>Listen for and trigger real-time messages and events.</p>
+	<pre style="height:210px;">
+		<code class="language-javascript">
+//	or trigger a custom event
+flybase.on("custom_event", function(message) {
+	console.log( message );
+});
+
+flybase.trigger("custom_event", "Hi")
+		</code>
+	</pre>
+</div>
+<br />
+<div class="box">
+	<div class="page-header">
+		<h2><i class="fa fa-key"></i> Security & User Management</h2>
+	</div>
+	<p>
+		Flybase provides a rich set of out-of-the-box security and user management features, including social login
+		(such as Facebook and Google+) and more.
+	</p>
+	<p>All of your data is transferred over a secure SSL connection with a 2048-bit certificate. Database access and validation is controlled using our API key rules.</p>
+	<hr />
+	<h3>API Keys</h3>
+	<p>Flybase allows you to restrict reading and writing via custom access controls, authentication and IP whitelisting.</p>
+	<p>Access to apps are controlled by API keys that are granted with a certain set of permissions. API keys determine which apps you can access and what you can do with them. They must be created from inside your account.</p>
+
+	<p>A default API key is automatically created and available for you in your application dashboard.</p>
+
+	<h3>Permissions</h3>
+
+	<p>API keys grant a different set of permissions according to their level of privileges:</p>
+
+	<ul>
+		<li>Admin: allow any operation on an application</li>
+		<li>Read-Only: give only read access to an app as well as the ability to create new documents</li>
+		<li>API Keys can be whitelisted to allow access from certain domains or IP addresses only</li>
+	</ul>
+	<p>On top of that, all data is replicated and backed up to multiple secure locations.</p>
+</div>
+<br />
+<div class="box">
+	<div class="page-header">
+		<h2><i class="fa fa-rocket"></i> Seamless Rock Solid Infrastructure That Scales For You</h2>
+	</div>
+	<p>
+		Flybase allows you to grow effortlessly from prototype to large-scale production. We scale every element of your backend,
+		including the database, in a way that is completely transparent to you.
+	</p>
+</div>
+
+<div class="content-break"><i class="fa fa-rocket"></i></div>
+<br />
+<section id="cta" class="blue text-center">
+	<h3>Ready to Build Awesome Apps?</h3>
+	<p>
+		<a href="https://app.flybase.io/signup" class="btn btn-primary btn-lg box-shadow--4dp"><i class="fa fa-rocket"></i> Sign up now for free »</a>
+	</p>
+</div>
