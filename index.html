@@ -6,33 +6,7 @@ layout: null
 {% include head.html %}
 <body class="landing">
 	<div id="page-wrapper">
-		<header id="header" class="alt">
-			<h1><a href="/"><i class="fa fa-rocket"></i> Flybase</a></h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="/features/">Features</a></li>
-					<li><a href="/pricing/">Pricing</a></li>
-					<li>
-						<a href="#" class="icon fa-angle-down">Resources</a>
-						<ul>
-							<li><a href="/getting-started/" title="Getting Started">Getting Started</a></li>
-							<li><a href="/tutorial/" title="Tutorial">Tutorial</a></li>
-							<li><a href="//docs.flybase.io/" title="Developer Docs">Developer Docs</a></li>
-							<li><a href="/books/" title="Books on Flybase">Books</a></li>
-							<li style="white-space: nowrap;"><a href="/parse/" title="Migrating from Parse to Flybase">Migrating from Parse</a></li>
-						</ul>
-					</li>
-					<li><a class="bloglink" href="//blog.flybase.io/" title="The Flybase Blog">Blog</a></li>
-					<li>
-						<a href="https://app.flybase.io/login" class="btn btn-primary box-shadow--4dp">Login</a>&nbsp;
-					</li>
-					<li>
-						<a href="https://app.flybase.io/signup" class="btn btn-default box-shadow--4dp">Sign Up</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
+		{% include altheader.html %}
 		<section id="banner">
 			<img src="/assets/flybasesm.png" style="max-width: 20em;width: 100%;padding: 2em;"/>
 			<h2>Build web and mobile apps in half the time</h2>
@@ -47,7 +21,7 @@ layout: null
 			<section class="box special">
 				<header class="major">
 					<h2>Store & Sync Data in Real-Time</h2>
-					<p>Focus on creating mind blowing user experiences and forget complex infrastructure. Design, build, and scale real-time web and mobile apps in minutes instead of days using client-side code and our powerful API</p>					
+					<p>Focus on creating mind blowing user experiences and forget complex infrastructure. Design, build, and scale real-time web and mobile apps in minutes instead of days using client-side code and our powerful API</p>
 {% comment %}
 					<p>We created <strong>Flybase</strong> because we were tired of solving the same problems over and over again. We wanted a fast and powerful platform to start focusing on our apps instead of wasting time on the infrastructure.</p>
 
@@ -64,7 +38,7 @@ layout: null
 				</ul>
 {% endcomment %}
 
-{% comment %} 
+{% comment %}
 				<div class="align-left">
 <h3>How much time do you spend on tedious and difficult tasks?</h3>
 <p>So you've decided to start developing the next great app. You think about the user interface, the user interaction, you start creating mockups... And then you start developing.</p>
@@ -315,7 +289,7 @@ flybase.where({"likes": {"$gt": 10}}).on('value', function(data){
 					</section>
 
 				</div>
-			</div>						
+			</div>
 {% endcomment %}
 		</section>
 		<section id="cta" class="black">

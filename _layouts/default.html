@@ -3,35 +3,6 @@
 {% include head.html %}
 <body>
 	<div id="page-wrapper">
-		<!-- Header -->
-		<header id="header">
-			<h1><a href="/"><i class="fa fa-rocket"></i> Flybase</a></h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="/features/">Features</a></li>
-					<li><a href="/pricing/">Pricing</a></li>
-	
-					<li>
-						<a href="#" class="icon fa-angle-down">Resources</a>
-						<ul>
-							<li><a href="/getting-started/" title="Getting Started">Getting Started</a></li>
-							<li><a href="/tutorial/" title="Tutorial">Tutorial</a></li>
-							<li><a href="//docs.flybase.io/" title="Developer Docs">Developer Docs</a></li>
-							<li><a href="/books/" title="Books on Flybase">Books</a></li>
-{% comment %}
-							<li style="white-space: nowrap;"><a href="/parse/" title="Migrating from Parse to Flybase">Migrating from Parse</a></li>
-{% endcomment %}
-						</ul>
-					</li>
-					<li><a class="bloglink" href="//blog.flybase.io/" title="The Flybase Blog">Blog</a></li>
-					<li>
-						<a href="https://app.flybase.io/login" class="btn btn-primary box-shadow--4dp">Login</a>&nbsp;
-					</li>
-					<li>
-						<a href="https://app.flybase.io/signup" class="btn btn-default box-shadow--4dp">Sign Up</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		{% include header.html %}
         {{ content }}
-{% include footer.html %}
+		{% include footer.html %}
