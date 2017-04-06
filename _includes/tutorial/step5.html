@@ -49,7 +49,7 @@ addChat(message.name, message.text);
 	});
 	function addChat(name, text) {
 		$('&lt;li/>').text(text).prepend($('&lt;strong/>').text(name+': ')).appendTo($('#messagesDiv'));
-		$('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+		$('#messages')[0].scrollTop = $('#messages')[0].scrollHeight;
 	}
 &lt;/script>
 &lt;/body>
