@@ -2888,7 +2888,7 @@
 					#header nav > ul > li a.btn-default{
 						color: #000 !important;
 					}
-					
+
 						#header nav > ul > li a:not(.button).icon:before {
 							color: #999;
 							margin-right: 0.5em;
@@ -3195,7 +3195,7 @@
 					margin-left: 0;
 					padding-left: 0;
 				}
-	
+
 
 
 /* CTA */
@@ -3809,7 +3809,7 @@
 			}
 
 	}
-	
+
 
 .btn {
   display: inline-block;
@@ -4338,7 +4338,7 @@ input[type="button"].btn-block {
 }
 .fade.in {
   opacity: 1;
-}	
+}
 
 
 .box-shadow--2dp {
@@ -4440,7 +4440,7 @@ input[type="button"].btn-block {
 }
 .blogb{
 	padding:10px !important;
-	margin-bottom: 0px !important;	
+	margin-bottom: 0px !important;
     background: #253340;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.2),inset 0 -1px 2px rgba(0,0,0,0.2);
 	border: 1px solid #497cb1;
@@ -4448,7 +4448,7 @@ input[type="button"].btn-block {
 	background: linear-gradient(#5ea7fc,#478afc);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.2),inset 0 -1px 2px rgba(0,0,0,0.2);
 	border: 1px solid #497cb1;
-	background: #497cb1;	
+	background: #497cb1;
 */
     color: #fff;
 }
@@ -4654,8 +4654,8 @@ input[type="button"].btn-block {
     box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 }
 
-hr.fancy-line { 
-	border: 0; 
+hr.fancy-line {
+	border: 0;
 	height: 1px;
 	position: relative;
 	margin: 0.5em 0; /* Keep other elements away from pseudo elements*/
@@ -4728,7 +4728,7 @@ hr.harden {
 	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.7), rgba(0,0,0,0));
 	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.7), rgba(0,0,0,0));
 	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.7), rgba(0,0,0,0));
-	border: 0;	
+	border: 0;
 */
 }
 
@@ -4779,7 +4779,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     margin-top: 40px;
     margin-bottom: 20px;
   }
- 
+
   /* Fallback styles */
     .book {
 		display: inline-block;
@@ -4802,7 +4802,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     }
 
     .book img { vertical-align: middle; }
-    
+
     /*
      *  I'd recommend using Modernized to detect 3d transform support
      *  which will add a "csstransforms3d" class to the html element
@@ -4927,7 +4927,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     margin: 0;
     padding: 4px;
     width: 91%;
-	color: #253340 !important; 	
+	color: #253340 !important;
     height: 1.5em;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4981,13 +4981,13 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .pricing-table td.tsection{
 	border-collapse: collapse;
     background: #f8f9fb;
-	border: 1px solid #f8f9fb;    
+	border: 1px solid #f8f9fb;
 	border-bottom: 1px solid #ddd;
     padding: 10px;
     color: #666;
     font-size: 15px;
     font-weight: 700;
-    text-align: left;	
+    text-align: left;
 }
 
 .pricing-table td.sub-title {
@@ -5113,7 +5113,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 .fa-close, sup{
 	color: #fe464d !important;
-	font-size: 12px !important;	
+	font-size: 12px !important;
 }
 .fa-check{
 	color: #33cd7b !important;
@@ -5365,7 +5365,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     margin-top: 40px;
     margin-bottom: 20px;
   }
- 
+
   /* Fallback styles */
     .book {
 		display: inline-block;
@@ -5388,7 +5388,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     }
 
     .book img { vertical-align: middle; }
-    
+
     /*
      *  I'd recommend using Modernized to detect 3d transform support
      *  which will add a "csstransforms3d" class to the html element
@@ -5513,7 +5513,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     margin: 0;
     padding: 4px;
     width: 91%;
-	color: #253340 !important; 	
+	color: #253340 !important;
     height: 1.5em;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -5535,4 +5535,9 @@ p code{
     color: #c7254e;
     background-color: #f9f2f4;
     border-radius: 4px;
+}
+
+.pillow{
+	width: 60% !important;
+	margin: 0 auto;
 }
