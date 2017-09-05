@@ -10,7 +10,7 @@ class: contact-page
 		<p>We'd love to hear from you, feel free to fill out the form below and get in touch with us that way, or one of the other methods below.</p>
 	</header>
 	<div class="box">
-		<form method="post" class="validate-form" method="post" action="//formspree.io/help@datamcfly.com">
+		<form method="post" class="validate-form" action="//formspree.io/help@datamcfly.com" onsubmit="return ValidationEvent()">
 		<input type="hidden" name="_next" value="http://flybase.io/contact/message-sent.html">
 		 <input type="text" name="_gotcha" style="display:none" />
 			<div class="row uniform 50%">
@@ -84,6 +84,29 @@ class: contact-page
 			</div>
 	</div>
 </section>
+<script>
+function encodeHTML(s) {
+	return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+}
+function stripHTML(str){
+	var strippedText = $("<div/>").html(str).text();
+	return strippedText;
+}
+
+function ValidationEvent() {
+	var name = document.getElementById("cname").value;
+	var email = document.getElementById("email").value;
+	var subject = document.getElementById("subject").value;
+	var message = document.getElementById("message").value;
+	
+	document.getElementById("cname").value = encodeHTML(name);
+	document.getElementById("email").value = encodeHTML(email);
+	document.getElementById("subject").value = encodeHTML(subject);
+	document.getElementById("message").value = encodeHTML(message);
+	
+	return true;
+}	
+</script>
 {% comment %}
 <section class="contact-other-section section">
     <div class="container text-center">
