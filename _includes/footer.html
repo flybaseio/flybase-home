@@ -1,4 +1,3 @@
-<div class="fb-customerchat" page_id="flybaseio"></div>
 <!-- ******FOOTER****** -->
 		<footer class="footer">
 		    <div class="footer-content">
@@ -118,6 +117,7 @@
 	window._fbq.push(['track', '6023557885808', {'value':'0.00','currency':'CAD'}]);
 	</script>
 	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6023557885808&amp;cd[value]=0.00&amp;cd[currency]=CAD&amp;noscript=1" /></noscript>
+{% comment %}
 	<script>
 	  window.fbAsyncInit = function() {
 	    FB.init({
@@ -136,7 +136,8 @@
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
-{% comment %}
+	<div class="fb-customerchat" page_id="flybaseio"></div>
+{% endcomment %}
 <!-- Messenger widget -->
 	<script>
 		var facebookPageId = "flybaseio"
@@ -147,6 +148,5 @@
 		var messengerColor  = '#3093FF';
 	</script>
 	<script type="text/javascript" src="https://cdn.flybase.io/messenger/messenger.js?v={{ site.time | date: '%s' }}"></script>
-{% endcomment %}
 </body>
 </html>
