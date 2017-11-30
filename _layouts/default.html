@@ -2,6 +2,7 @@
 <html>
 {% include head.html %}
 <body>
+{% comment %}
 	<script>
 	  window.fbAsyncInit = function() {
 	    FB.init({
@@ -20,6 +21,7 @@
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
+{% endcomment %}
 	<div id="page-wrapper">
 		{% include header.html %}
         {{ content }}

@@ -1,6 +1,6 @@
 {% comment %}
 	<div class="fb-customerchat"
-		page_id="flybaseio"
+		page_id="656437674474815"
 		minimized="false"
 	></div>
 {% endcomment %}
@@ -124,6 +124,31 @@
 	</script>
 	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6023557885808&amp;cd[value]=0.00&amp;cd[currency]=CAD&amp;noscript=1" /></noscript>
 <!-- Messenger widget -->
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+	appId: "155911741693042",
+	xfbml: true,
+	version: "v2.6"
+  });
+};
+//begin customer chat javascript
+	(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) { return; }
+   js = d.createElement(s); js.id = id;
+	  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";;
+   fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+//end customer chat javascript
+</script>
+<!-- customer chat plugin begin -->
+<div class="fb-customerchat"
+	data-href="https://flybase.io";
+messenger_app_id="155911741693042"
+page_id="656437674474815">
+</div>
+{% comment %}
 	<script>
 		var facebookPageId = "flybaseio"
 		var messengerName = "Roger"
@@ -133,5 +158,6 @@
 		var messengerColor  = '#3093FF';
 	</script>
 	<script type="text/javascript" src="https://cdn.flybase.io/messenger/messenger.js?v={{ site.time | date: '%s' }}"></script>
+{% endcomment %}
 </body>
 </html>
